@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace EfCore
+namespace EfCoreConsistencyExamples
 {
     public class ExecutionStrategyExample
     {
@@ -63,7 +63,6 @@ namespace EfCore
 
         private async Task UpdateAsync(int id, int userId)
         {
-            Console.WriteLine(userId);
             using (var dbContext = new MyDbContext())
             {
                 var entity = await dbContext.Users.FirstAsync(x => x.Id == userId);
