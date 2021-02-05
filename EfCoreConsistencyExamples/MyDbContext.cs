@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Debug;
 
-namespace EfCore
+namespace EfCoreConsistencyExamples
 {
     public class MyDbContext : DbContext
     {

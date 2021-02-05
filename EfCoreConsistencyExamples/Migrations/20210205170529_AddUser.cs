@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EfCore.Migrations
+namespace EfCoreConsistencyExamples.Migrations
 {
     public partial class AddUser : Migration
     {
